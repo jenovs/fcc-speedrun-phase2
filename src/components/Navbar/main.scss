@@ -1,0 +1,40 @@
+@import './../../stylesheets/base/colors';
+@import './../../stylesheets/base/layout';
+
+nav {
+  background-color: $background-sand;
+  color: $sand-font-color;
+  display: flex;
+  flex-direction: row;
+  height: $navbar-height;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+}
+
+nav > div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.2rem;
+  font-weight: bold;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  max-width: 960px;
+  width: 100%;
+}
+
+.navbar__project-div {
+  flex: 1;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.navbar__image-div {
+  background-image: url('/images/medium-m-color-100px.png');
+  background-size: cover;
+  height: 2rem;
+  width: 2rem;
+}
