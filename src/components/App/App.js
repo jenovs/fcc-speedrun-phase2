@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Navbar from './../Navbar';
+
 import './app.scss';
 
 export default class App extends React.Component {
@@ -12,6 +14,8 @@ export default class App extends React.Component {
   }
 
   render() {
+    // console.log();
+    const pathname = this.props.children.props.location.pathname;
     // const {  } = this.state;
     const props = {
 
@@ -21,6 +25,7 @@ export default class App extends React.Component {
 
     return (
       <div className="app__container">
+        <Navbar pathname={pathname} />
         {childrenWithProps}
       </div>
     )
