@@ -51,7 +51,7 @@ export default class App extends React.Component {
     const childrenWithProps = React.Children.map(this.props.children, (child) => React.cloneElement(child, props));
 
     return (
-      <div id="main" className="app__container">
+      <div id="main" className="tribute-page-app__container">
         {/* {childrenWithProps} */}
         <Home {...props} />
       </div>

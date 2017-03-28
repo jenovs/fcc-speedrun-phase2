@@ -4,11 +4,11 @@ a {
   color: blue;
 }
 
-.app__container {
+.tribute-page-app__container {
   // background-color: $background-color;
   justify-content: flex-start;
   display: flex;
   flex-direction: column;
   // margin-top: $navbar-height;
-  min-height: 100vh;
+  min-height: 101vh;
 }
