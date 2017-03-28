@@ -1,0 +1,47 @@
+@import './../../stylesheets/base/colors';
+
+.about__container {
+  color: #222;
+  // display: flex;
+  margin: 0 auto;
+  max-width: 60rem;
+
+  & h1 {
+    // text-align: center;
+  }
+}
+
+.about__links {
+  background-color: $background-sand;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0.5rem 2rem;
+
+  & > a,
+  & > button {
+    color: $sand-font-color;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+      // transform: scale(1.1);
+      // font-size: 1.1rem;
+      // color: lighten($sand-font-color, 10%);
+    }
+  }
+}
+
+.about__text {
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: wrap;
+  // flex: 0 1 auto;
+  padding: 0 2rem;
+
+  & div p {
+    // margin-left: 2rem;
+    // color: red;
+    line-height: 1.2rem;
+  }
+}
