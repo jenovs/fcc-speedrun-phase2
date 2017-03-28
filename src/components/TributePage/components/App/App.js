@@ -16,7 +16,7 @@ export default class App extends React.Component {
     this.switchLang = this.switchLang.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.fetchData(this.state.lang)
   }
 
@@ -33,7 +33,6 @@ export default class App extends React.Component {
   }
 
   switchLang(lang) {
-    console.log('switchLang', lang);
     this.setState({
       lang
     }, () => {

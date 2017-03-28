@@ -24,7 +24,7 @@ const Home = (props) => {
   return (
     <div className="home__container">
       <div className="home__links">
-        <Link to="/tribute-page/about">About</Link>
+        {/* <Link to="/tribute-page/about">About</Link> */}
         {props.lang !== 'en' && <button className="home__button" onClick={props.switchLang.bind(this, 'en')}>Switch to English</button>}
         <a id="tribute-link" href="http://lipsum.com" target="_blank">lipsum.com</a>
       </div>
