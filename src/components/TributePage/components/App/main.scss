@@ -1,4 +1,4 @@
-// @import './../../stylesheets/base/colors';
+@import './../../../../stylesheets/base/layout';
 
 a {
   color: blue;
@@ -9,5 +9,6 @@ a {
   justify-content: flex-start;
   display: flex;
   flex-direction: column;
+  // margin-top: $navbar-height;
   min-height: 100vh;
 }

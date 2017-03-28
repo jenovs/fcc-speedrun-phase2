@@ -1,4 +1,5 @@
-@import './../../stylesheets/base/colors';
+@import './../../../../stylesheets/base/colors';
+@import './../../../../stylesheets/base/layout';
 
 .home__button {
   border: none;
@@ -8,6 +9,7 @@
 .home__container {
   color: #222;
   margin: auto;
+  margin-top: $navbar-height;
   max-width: 60rem;
 
   & h1 {
