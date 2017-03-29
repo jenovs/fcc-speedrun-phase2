@@ -23,12 +23,18 @@ const Home = (props) => {
 
   return (
     <div className="home__container">
-      <div className="home__links">
-        {/* <Link to="/tribute-page/about">About</Link> */}
+      {/* <div className="home__links">
+        <Link to="/tribute-page/about">About</Link>
         {props.lang !== 'en' && <button className="home__button" onClick={props.switchLang.bind(this, 'en')}>Switch to English</button>}
-        <a id="tribute-link" href="http://lipsum.com" target="_blank">lipsum.com</a>
+      </div> */}
+      <div className="home__title">
+        <div>
+          <h1 id="title">Lorem Ipsum</h1>
+        </div>
+        <div>
+          <a id="tribute-link" href="http://lipsum.com" target="_blank">lipsum.com</a>
+        </div>
       </div>
-      <h1 id="title">Lorem Ipsum</h1>
       <hr width="100%"/>
       {/* <div id="img-div">
         <img id="image"/>
