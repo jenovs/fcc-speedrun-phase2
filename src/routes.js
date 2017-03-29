@@ -3,8 +3,8 @@ import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
 import Home from './components/Home';
-import TributePage from './components/TributePage/components/App';
-import TributePageAbout from './components/TributePage/components/About';
+import TributePage from './components/TributePage/App';
+import TributePageAbout from './components/TributePage/About';
 
 import NotFound404 from './components/NotFound404';
 
