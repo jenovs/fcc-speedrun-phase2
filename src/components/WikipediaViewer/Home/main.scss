@@ -1,0 +1,23 @@
+@import './../../../stylesheets/base/layout';
+
+.wikiviewer-home__container {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: auto;
+  margin-top: $navbar-height;
+  padding: 2rem;
+  padding-bottom: 0;
+  padding-top: 1rem;
+  width: 100vw;
+}
+
+.wikiviewer-home__search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}

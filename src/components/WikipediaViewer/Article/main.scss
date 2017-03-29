@@ -1,0 +1,30 @@
+.article__container {
+  align-items: center;
+  background-color: lightyellow;
+  box-shadow: 0 0 5px gray;
+  font-family: 'Indie Flower', cursive;
+  font-size: 2rem;
+  display: flex;
+  height: 10rem;
+  justify-content: center;
+  padding: 1rem;
+  transition: box-shadow 0.2s;
+  width: 15rem;
+  word-break: break-word;
+
+  &.hidden {
+    animation-name: showUp;
+    animation-duration: .25s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes showUp {
+    from {transform: rotate(2deg);}
+    to {transform: rotate(-2deg);}
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px gray;
+    z-index: 9999;
+  }
+}
