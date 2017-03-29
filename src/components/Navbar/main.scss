@@ -35,6 +35,12 @@ nav > div {
 .navbar__image-div {
   background-image: url('/images/medium-m-color-100px.png');
   background-size: cover;
+  cursor: pointer;
   height: 2rem;
+  transition: transform 0.3s;
   width: 2rem;
+
+  &:hover {
+    transform: scale(1.5);
+  }
 }
