@@ -1,0 +1,23 @@
+// Chart
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+// Quote
+.quote__container {
+  font-size: 1.2rem;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.quote__name {
+  margin-bottom: 1rem;
+}
+
+.quote__close {
+  font-size: 2rem;
+  font-weight: bold;
+}
