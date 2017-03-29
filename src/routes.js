@@ -6,6 +6,7 @@ import Home from './components/Home';
 import LocalWeather from './components/LocalWeather/App';
 import RandomQuoteMachine from './components/RandomQuoteMachine/App';
 import TributePage from './components/TributePage/App';
+import TwitchClient from './components/TwitchClient/App';
 import WikipediaViewer from './components/WikipediaViewer/App';
 // import TributePageAbout from './components/TributePage/About';
 
@@ -18,6 +19,7 @@ module.exports = (
     <Route path='random-quote-machine' component={RandomQuoteMachine} />
     <Route path='local-weather' component={LocalWeather} />
     <Route path='wikipedia-viewer' component={WikipediaViewer} />
+    <Route path='twitch-client' component={TwitchClient} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />

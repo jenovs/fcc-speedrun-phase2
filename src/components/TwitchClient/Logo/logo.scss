@@ -1,0 +1,11 @@
+.logo__container {
+  align-items: center;
+  display: flex;
+  flex: 0 0 5rem;
+  justify-content: center;
+  padding-left: 1rem;
+
+  & img {
+    border-radius: 4px;
+  }
+}

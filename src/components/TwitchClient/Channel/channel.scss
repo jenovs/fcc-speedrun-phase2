@@ -1,0 +1,20 @@
+@import './../../../stylesheets/base/colors';
+
+.channel__container {
+  background-color: $background-sand;
+  display: flex;
+  flex-direction: row;
+  margin: 0.5rem;
+  word-break: break-word;
+
+  &:hover {
+    background-color: darken($background-sand, 10%);
+  }
+}
+
+.channel-text__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+}

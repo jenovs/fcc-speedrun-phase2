@@ -8,7 +8,8 @@ const Home = (props) => (
     <Link to='/tribute-page'>Tribute Page</Link>
     <Link to='/random-quote-machine'>Random Quote Machine</Link>
     <Link to='/local-weather'>Show the Local Weather</Link>
-    <Link to='/wikipedia-viewer'>WikipediaViewer</Link>
+    <Link to='/wikipedia-viewer'>Wikipedia Viewer</Link>
+    <Link to='/twitch-client'>Twitch Client</Link>
   </div>
 );
 

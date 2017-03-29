@@ -1,0 +1,21 @@
+@import './../../../stylesheets/base/colors';
+
+.channel-name__container {
+  color: darkred;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.channel-stream__container {
+  color: blue;
+  &.offline {
+    color: gray;
+  }
+}
+
+.channel-bio__container {
+  color: $sand-font-color;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
