@@ -1,0 +1,9 @@
+.temperature__container {
+  border-radius: 5px;
+  font-size: 3rem;
+  padding: 0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

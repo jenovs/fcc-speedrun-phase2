@@ -1,0 +1,20 @@
+@import './../../stylesheets/base/colors';
+
+footer {
+  // background-color: $base-color;
+  // box-shadow: 0 -1px 2px $base-dark-color;
+  // color: $base-font-color;
+  font-size: 1rem;
+  // font-weight: bold;
+  line-height: 0.8rem;
+  padding: 0.5rem 0;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+footer a,
+footer a:hover,
+footer a:active {
+  // color: $footer-link-color;
+  text-decoration: none;
+}
