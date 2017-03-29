@@ -10,7 +10,7 @@ const openMedium = (pathname) => {
 
 const Navbar = (props) => {
   const { pathname } = props;
-  const projectName = pathname.substr(1).replace('-', ' ');
+  const projectName = pathname.substr(1).replace(/-/g, ' ');
   return (
     <nav>
       <div>
