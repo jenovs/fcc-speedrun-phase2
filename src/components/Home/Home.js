@@ -13,6 +13,7 @@ const Home = (props) => (
     <Link to='/calculator'>Calculator</Link>
     <Link to='/pomodoro-clock'>Pomodoro Clock</Link>
     <Link to='/tic-tac-toe'>Tic Tac Toe</Link>
+    <Link to='/simon-game'>Simon Game</Link>
   </div>
 );
 

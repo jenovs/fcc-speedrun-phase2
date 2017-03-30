@@ -1,0 +1,45 @@
+.simon-game-home__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5rem;
+  max-width: 960px;
+}
+
+.simon-game-home__pads {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40rem;
+}
+
+.simon-game-home__status {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  margin: 1rem;
+}
+
+.simon-game-home__button-start {
+  margin: 1rem;
+
+  & button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+}
+
+.simon-game-home__button-strict {
+  // margin: 1rem;
+
+  & button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+}

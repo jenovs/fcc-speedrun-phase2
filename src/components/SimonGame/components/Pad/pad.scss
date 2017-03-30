@@ -1,0 +1,45 @@
+$red-color: red;
+$yellow-color: darkorange;
+$green-color: green;
+$blue-color: blue;
+
+.pad__container {
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  height: 10rem;
+  margin: 2rem;
+  padding: 2rem;
+  width: 10rem;
+
+  &:nth-child(1) {
+    background-color: $red-color;
+    &.highlighted,
+    &:active {
+      background-color: lighten($red-color, 20%);
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: $blue-color;
+    &.highlighted,
+    &:active {
+      background-color: lighten($blue-color, 20%);
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: $yellow-color;
+    &.highlighted,
+    &:active {
+      background-color: lighten($yellow-color, 20%);
+    }
+  }
+
+  &:nth-child(4) {
+    background-color: $green-color;
+    &.highlighted,
+    &:active {
+      background-color: lighten($green-color, 20%);
+    }
+  }
+}
