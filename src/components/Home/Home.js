@@ -20,6 +20,8 @@ const Home = (props) => (
     <Link to='/recipe-box'>Recipe Box</Link>
     <Link to='/game-of-life'>Game of Life</Link>
     <Link to='/dungeon-crawler'>Dungeon Crawler</Link>
+    <hr />
+    <Link to='/bar-chart'>Bar Chart</Link>
   </div>
 );
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
+import BarChart from './components/BarChart/components/App';
 import Calculator from './components/Calculator/components/App';
 import CamperLeaderboard from './components/CamperLeaderboard/components/App';
 import DungeonCrawler from './components/DungeonCrawler/components/App';
@@ -38,6 +39,7 @@ module.exports = (
     <Route path='recipe-box' component={RecipeBox} />
     <Route path='game-of-life' component={GameOfLife} />
     <Route path='dungeon-crawler' component={DungeonCrawler} />
+    <Route path='bar-chart' component={BarChart} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />
