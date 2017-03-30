@@ -5,6 +5,7 @@ import App from './components/App';
 import Calculator from './components/Calculator/components/App';
 import Home from './components/Home';
 import LocalWeather from './components/LocalWeather/App';
+import PomodoroClock from './components/PomodoroClock/components/App';
 import RandomQuoteMachine from './components/RandomQuoteMachine/App';
 import TributePage from './components/TributePage/App';
 import TwitchClient from './components/TwitchClient/App';
@@ -22,6 +23,7 @@ module.exports = (
     <Route path='wikipedia-viewer' component={WikipediaViewer} />
     <Route path='twitch-client' component={TwitchClient} />
     <Route path='calculator' component={Calculator} />
+    <Route path='pomodoro-clock' component={PomodoroClock} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />

@@ -1,0 +1,21 @@
+.controls__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  & .btn {
+    font-weight: bold;
+    margin: 1rem;
+  }
+
+  & .btn[value="Start"] {
+    color: darkblue;
+  }
+  & .btn[value="Stop"] {
+    color: red;
+  }
+  & .btn[value="Reset"] {
+    color: red;
+  }
+}

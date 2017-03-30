@@ -11,6 +11,7 @@ const Home = (props) => (
     <Link to='/wikipedia-viewer'>Wikipedia Viewer</Link>
     <Link to='/twitch-client'>Twitch Client</Link>
     <Link to='/calculator'>Calculator</Link>
+    <Link to='/pomodoro-clock'>Pomodoro Clock</Link>
   </div>
 );
 

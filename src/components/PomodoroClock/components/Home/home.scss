@@ -1,0 +1,41 @@
+.pomodoro-home__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 960px;
+}
+
+.pomodoro-home__time-setting {
+  font-size: 3rem;
+  text-align: center;
+  width: 3rem;
+
+  & p {
+    margin: 0;
+  }
+}
+
+.pomodoro-home__timer-label {
+  color: tomato;
+  font-size: 3rem;
+  font-weight: bold;
+
+  & p {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.pomodoro-home__timer {
+  // font-family:
+  font-size: 5rem;
+}
+
+.pomodoro-home__label {
+  font-size: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
