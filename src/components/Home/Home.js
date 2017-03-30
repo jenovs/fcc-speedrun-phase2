@@ -16,6 +16,7 @@ const Home = (props) => (
     <Link to='/simon-game'>Simon Game</Link>
     <hr />
     <Link to='/markdown-previewer'>Markdown Previewer</Link>
+    <Link to='/camper-leaderboard'>Camper Leaderboard</Link>
   </div>
 );
 

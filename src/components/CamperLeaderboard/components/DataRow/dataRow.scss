@@ -1,0 +1,76 @@
+@import "./../../../../stylesheets/base/colors";
+
+$break-min: 550px;
+
+.dataRow__container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #eee;
+  width: 100%;
+
+
+  & div:nth-child(1) {
+    // color: red;
+    width: 2rem;
+  }
+
+  & img {
+    height: 20px;
+  }
+
+
+  &:hover {
+    background-color: lighten($cornflower-blue, 15%);
+    font-weight: bold;
+
+
+    & img {
+      box-shadow: 0 0 5px gray;
+      height: 40px;
+      transform: scale(2);
+    }
+
+    @media (max-width: $break-min) {
+      & img {
+        transform: scale(1.5);
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.dataRow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataRow__username {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  @media (max-width: $break-min) {
+    font-size: 0.9rem;
+
+    // &:hover {
+    //   padding-left: 10rem;
+    //   // color: red;
+    // }
+  }
+
+  & img {
+    margin: auto 3rem;
+
+    @media (max-width: $break-min) {
+      margin: auto 0.2rem;
+    }
+  }
+}
+
+.dataRow__count {
+  width: 5rem;
+}

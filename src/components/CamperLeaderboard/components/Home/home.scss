@@ -1,0 +1,18 @@
+@import "./../../../../stylesheets/base/layout";
+
+.leaderboard-home__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: $navbar-height;
+  margin-bottom: 3rem;
+  max-width: 760px;
+  width: 90vw;
+}
+
+.leaderboard-home__title {
+  font-weight: bold;
+  color: red;
+}

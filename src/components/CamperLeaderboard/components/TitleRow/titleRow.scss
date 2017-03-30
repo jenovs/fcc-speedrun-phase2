@@ -1,0 +1,39 @@
+@import "./../../../../stylesheets/base/colors";
+
+.titleRow__container {
+  border: 2px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+  width: 100%;
+
+  & div:nth-child(1) {
+    // color: red;
+    width: 2rem;
+  }
+}
+
+.titleRow {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 2rem;
+  justify-content: center;
+}
+
+.highlight-recent,
+.highlight-alltime {
+  background-color: $cornflower-blue;
+  color: white;
+}
+
+.titleRow__count {
+  padding: 0.5rem;
+  width: 5rem;
+}
+
+.titleRow__username {
+  flex: 1;
+}
