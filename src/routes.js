@@ -5,6 +5,7 @@ import App from './components/App';
 import Calculator from './components/Calculator/components/App';
 import Home from './components/Home';
 import LocalWeather from './components/LocalWeather/App';
+import MarkdownPreviewer from './components/MarkdownPreviewer/components/App';
 import PomodoroClock from './components/PomodoroClock/components/App';
 import RandomQuoteMachine from './components/RandomQuoteMachine/App';
 import SimonGame from './components/SimonGame/components/App';
@@ -28,6 +29,7 @@ module.exports = (
     <Route path='pomodoro-clock' component={PomodoroClock} />
     <Route path='tic-tac-toe' component={TicTacToe} />
     <Route path='simon-game' component={SimonGame} />
+    <Route path='markdown-previewer' component={MarkdownPreviewer} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />

@@ -1,0 +1,60 @@
+$break-point: 700px;
+
+.markdown-home__container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 95vh;
+  justify-content: space-around;
+  // width: 100%;
+  width: 100vw;
+
+  @media (max-width: $break-point) {
+    flex-direction: column;
+  }
+}
+
+.markdown-home__textarea {
+  height: 80%;
+  margin: 1rem;
+  width: 45%;
+
+  & textarea {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+    outline: none;
+    overflow: auto;
+    padding: 1rem;
+    resize: none;
+    width: 100%;
+  }
+
+  @media (max-width: $break-point) {
+    min-width: 90%;
+    height: 45%;
+    margin-bottom: 0;
+
+    & textarea {
+      height: 100%;
+    }
+  }
+}
+
+.markdown-home__output {
+  box-shadow: 0 0 3px gray;
+  height: 80%;
+  margin: 1rem;
+  width: 45%;
+  overflow: auto;
+  padding: 1rem;
+
+  & p {
+    word-wrap: break-word;
+  }
+
+  @media (max-width: $break-point) {
+    min-width: 90%;
+    height: 40%;
+  }
+}
