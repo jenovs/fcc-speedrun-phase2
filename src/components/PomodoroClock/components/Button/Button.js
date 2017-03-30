@@ -13,7 +13,7 @@ const Button = (props) => {
   return(
     <input
       onClick={handleClick.bind(this, dataId)}
-      className="btn"
+      className="pomodoro-btn"
       data-id={props.dataId}
       style={style}
       type={type}

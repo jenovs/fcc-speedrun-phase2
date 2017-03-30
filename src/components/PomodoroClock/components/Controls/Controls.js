@@ -4,7 +4,7 @@ import './controls.scss';
 
 const Controls = (props) => {
   return (
-    <div className="controls__container">
+    <div className="pomodoro-controls__container">
       {props.children}
     </div>
   )

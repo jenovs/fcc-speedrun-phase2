@@ -1,21 +1,21 @@
-.controls__container {
+.pomodoro-controls__container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 
-  & .btn {
+  & .pomodoro-btn {
     font-weight: bold;
     margin: 1rem;
   }
 
-  & .btn[value="Start"] {
+  & .pomodoro-btn[value="Start"] {
     color: darkblue;
   }
-  & .btn[value="Stop"] {
+  & .pomodoro-btn[value="Stop"] {
     color: red;
   }
-  & .btn[value="Reset"] {
+  & .pomodoro-btn[value="Reset"] {
     color: red;
   }
 }

@@ -1301,7 +1301,7 @@ circle {
     .markdown-home__output {
       min-width: 90%;
       height: 40%; } }
-.btn {
+.pomodoro-btn {
   background-color: #fff;
   border: 1px solid gray;
   border-radius: 2px;
@@ -1311,22 +1311,22 @@ circle {
   min-width: 3rem;
   padding: 0.3rem 0.6rem;
   transition: all 0.1s; }
-  .btn:hover {
+  .pomodoro-btn:hover {
     border: 1px solid gray;
     box-shadow: 0 0 2px black; }
-.controls__container {
+.pomodoro-controls__container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
-  .controls__container .btn {
+  .pomodoro-controls__container .pomodoro-btn {
     font-weight: bold;
     margin: 1rem; }
-  .controls__container .btn[value="Start"] {
+  .pomodoro-controls__container .pomodoro-btn[value="Start"] {
     color: darkblue; }
-  .controls__container .btn[value="Stop"] {
+  .pomodoro-controls__container .pomodoro-btn[value="Stop"] {
     color: red; }
-  .controls__container .btn[value="Reset"] {
+  .pomodoro-controls__container .pomodoro-btn[value="Reset"] {
     color: red; }
 .pomodoro__container {
   align-items: center;
