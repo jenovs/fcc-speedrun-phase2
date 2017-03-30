@@ -33,6 +33,10 @@ export default class App extends React.Component {
     }, this.loop)
   }
 
+  componentWillUnmount() {
+    clearInterval(this.state.interval);
+  }
+
   loop() {
     const { speed } = this.state;
 
