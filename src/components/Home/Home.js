@@ -22,6 +22,7 @@ const Home = (props) => (
     <Link to='/dungeon-crawler'>Dungeon Crawler</Link>
     <hr />
     <Link to='/bar-chart'>Bar Chart</Link>
+    <Link to='/scatterplot-chart'>Scatterplot Chart</Link>
   </div>
 );
 

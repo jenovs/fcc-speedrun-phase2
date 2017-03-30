@@ -13,6 +13,7 @@ import MarkdownPreviewer from './components/MarkdownPreviewer/components/App';
 import PomodoroClock from './components/PomodoroClock/components/App';
 import RandomQuoteMachine from './components/RandomQuoteMachine/App';
 import RecipeBox from './components/RecipeBox/components/App';
+import Scatterplot from './components/Scatterplot/components/App';
 import SimonGame from './components/SimonGame/components/App';
 import TicTacToe from './components/TicTacToe/components/App';
 import TributePage from './components/TributePage/App';
@@ -40,6 +41,7 @@ module.exports = (
     <Route path='game-of-life' component={GameOfLife} />
     <Route path='dungeon-crawler' component={DungeonCrawler} />
     <Route path='bar-chart' component={BarChart} />
+    <Route path='scatterplot-chart' component={Scatterplot} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />
