@@ -11,6 +11,7 @@ import GameOfLife from './components/GameOfLife/components/App';
 import Heatmap from './components/Heatmap/components/App';
 import Home from './components/Home';
 import LocalWeather from './components/LocalWeather/App';
+import MapData from './components/MapData/components/App';
 import MarkdownPreviewer from './components/MarkdownPreviewer/components/App';
 import PomodoroClock from './components/PomodoroClock/components/App';
 import RandomQuoteMachine from './components/RandomQuoteMachine/App';
@@ -46,6 +47,7 @@ module.exports = (
     <Route path='scatterplot-chart' component={Scatterplot} />
     <Route path='heatmap' component={Heatmap} />
     <Route path='force-graph' component={ForceGraph} />
+    <Route path='map-data' component={MapData} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />

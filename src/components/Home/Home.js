@@ -25,6 +25,7 @@ const Home = (props) => (
     <Link to='/scatterplot-chart'>Scatterplot Chart</Link>
     <Link to='/heatmap'>Heatmap</Link>
     <Link to='/force-graph'>Force Graph</Link>
+    <Link to='/map-data'>Map Data Across the Globe</Link>
   </div>
 );
 
