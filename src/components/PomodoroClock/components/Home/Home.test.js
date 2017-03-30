@@ -10,7 +10,7 @@ describe('<Home />', () => {
     const wrapper = shallow(<Home />);
 
     expect(wrapper.find('div')).to.have.length(1);
-    expect(wrapper.hasClass('home__container')).to.be.true;
+    expect(wrapper.hasClass('pomodoro-home__container')).to.be.true;
   });
 
   it('should render children', () => {

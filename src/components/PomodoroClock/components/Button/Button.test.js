@@ -31,7 +31,7 @@ describe('<Button />', () => {
     expect(wrapper).to.have.data('id', 123);
   });
 
-  it(`it should call 'handleClick' when clicked`, test(() => {
+  it(`it should call 'handleClick' when clicked`, () => {
     const props = {
       handleClick: spy(),
     }
@@ -42,5 +42,7 @@ describe('<Button />', () => {
 
     wrapper.find('input').simulate('click');
     expect(props.handleClick.callCount).to.equal(2);
-  }));
+
+    // spy.restore();
+  });
 });
