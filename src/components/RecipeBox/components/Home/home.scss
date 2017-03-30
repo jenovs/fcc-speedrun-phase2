@@ -1,0 +1,29 @@
+@import "./../../../../stylesheets/base/layout";
+
+.recipe-box-home__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0 auto;
+  margin-top: $navbar-height + 2rem;
+  width: 100vw;
+  max-width: 960px;
+}
+
+.recipe-box-home__collapse {
+  min-width: 100%;
+}
+
+.recipe-box-home__button-add {
+  align-self: flex-end;
+  margin-top: 2rem;
+  margin-right: 0;
+}
+
+.recipe-box-home__title {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}

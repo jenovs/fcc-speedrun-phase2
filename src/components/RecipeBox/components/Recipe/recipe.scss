@@ -1,0 +1,34 @@
+.recipe__container {
+
+  & textarea {
+    box-sizing: border-box;
+
+    min-height: 7rem;
+    // height: auto;
+    outline: none;
+    overflow: auto;
+
+    padding: 0.5rem;
+    resize: none;
+    width: 100%;
+
+  & a {
+    color: blue;
+  }
+
+  }
+
+  & input {
+    box-sizing: border-box;
+    outline: none;
+    padding-left: 0.5rem;
+    width: 100%;
+  }
+}
+
+.recipe__controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  // align-items: flex-end;
+}
