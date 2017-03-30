@@ -1,0 +1,45 @@
+.dungeon-crawler-cell__container {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 12px;
+  width: 12px;
+
+  &.fill--hero {
+    background-color: blue;
+  }
+
+  &.fill--black {
+    background-color: black;
+  }
+
+  &.fill--gray {
+    background-color: darkgray;
+  }
+
+  &.fill--enemy {
+    color: yellow;
+    background-color: black;
+  }
+
+  &.fill--health {
+    color: red;
+    background-color: darkgray;
+  }
+
+  &.fill--weapon {
+    color: black;
+    background-color: darkgray;
+  }
+
+  &.fill--wall {
+    background-color: brown;
+  }
+
+  &.fill--boss {
+    color: red;
+    background-color: black;
+  }
+}

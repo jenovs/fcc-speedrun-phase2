@@ -4,6 +4,7 @@ import { Route, IndexRoute } from 'react-router';
 import App from './components/App';
 import Calculator from './components/Calculator/components/App';
 import CamperLeaderboard from './components/CamperLeaderboard/components/App';
+import DungeonCrawler from './components/DungeonCrawler/components/App';
 import GameOfLife from './components/GameOfLife/components/App';
 import Home from './components/Home';
 import LocalWeather from './components/LocalWeather/App';
@@ -36,6 +37,7 @@ module.exports = (
     <Route path='camper-leaderboard' component={CamperLeaderboard} />
     <Route path='recipe-box' component={RecipeBox} />
     <Route path='game-of-life' component={GameOfLife} />
+    <Route path='dungeon-crawler' component={DungeonCrawler} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />
