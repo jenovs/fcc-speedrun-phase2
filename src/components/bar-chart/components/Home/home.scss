@@ -1,0 +1,13 @@
+@import "./../../../../stylesheets/base/layout";
+
+.bar-chart-home__container {
+  box-shadow: 0 0 5px 1px teal;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  margin-top: $navbar-height + 1rem;
+  max-width: 960px;
+  padding: 1rem;
+}
