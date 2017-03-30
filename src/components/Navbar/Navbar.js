@@ -15,7 +15,7 @@ const Navbar = (props) => {
     <nav>
       <div>
         <Link to={'/'}>Home</Link>
-        <div className="navbar__project-div">{projectName}</div>
+        <div className="navbar__project-div">{projectName || 'FCC Speedrun'}</div>
         <div
           onClick={openMedium.bind(null, pathname)}
           className="navbar__image-div"

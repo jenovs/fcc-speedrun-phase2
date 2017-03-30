@@ -5,7 +5,7 @@ import Channels from './../Channels'
 import './home.scss';
 
 const Home = (props) => (
-  <div className="home__container">
+  <div className="twitch-home__container">
     <Channels {...props} />
   </div>
 );

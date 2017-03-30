@@ -1,12 +1,12 @@
 @import './../../../stylesheets/base/colors';
 @import './../../../stylesheets/base/layout';
 
-.home__button {
+.tribute-home__button {
   border: none;
   cursor: pointer;
 }
 
-.home__container {
+.tribute-home__container {
   color: #222;
   margin: auto;
   margin-top: $navbar-height;
@@ -18,7 +18,7 @@
   }
 }
 
-.home__description {
+.tribute-home__description {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -32,7 +32,7 @@
   }
 }
 
-.home__translations {
+.tribute-home__translations {
   // color: red;
   font-size: 0.9rem;
   padding: 0 2rem;
@@ -42,7 +42,7 @@
   }
 }
 
-.home__links {
+.tribute-home__links {
   background-color: $background-sand;
   display: flex;
   flex-direction: row;
@@ -72,7 +72,7 @@
   }
 }
 
-.home__title {
+.tribute-home__title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;

@@ -54,7 +54,8 @@ export default class MapGraph extends React.Component {
 
   svg
     .attr("width", totalWidth)
-    .attr("height", totalHeight);
+    .attr("height", totalHeight)
+    .attr('class', 'map-graph-svg');
 
   const projection = d3.geoMercator()
     .translate([width/2, height/2 + 50])

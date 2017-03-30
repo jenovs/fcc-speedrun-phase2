@@ -22,12 +22,12 @@ const Home = (props) => {
   if (!props.description || !props.translations) return <Loading />
 
   return (
-    <div className="home__container">
+    <div className="tribute-home__container">
       {/* <div className="home__links">
         <Link to="/tribute-page/about">About</Link>
         {props.lang !== 'en' && <button className="home__button" onClick={props.switchLang.bind(this, 'en')}>Switch to English</button>}
       </div> */}
-      <div className="home__title">
+      <div className="tribute-home__title">
         <div>
           <h1 id="title">Lorem Ipsum</h1>
         </div>
@@ -41,11 +41,11 @@ const Home = (props) => {
         <p id="img-caption"></p>
       </div> */}
       <div id="tribute-info">
-        <div className="home__description">
+        <div className="tribute-home__description">
           {parseText(props.description)}
         </div>
         <hr/>
-        <div className="home__translations">
+        <div className="tribute-home__translations">
           {parseText(props.translations)}
         </div>
       </div>

@@ -42,6 +42,7 @@ function renderChart(dataset, axisOnly) {
   const svg = d3.select(node)
       .attr('width', totalWidth)
       .attr('height', totalHeight)
+      .attr('class', 'rqm-svg-container')
     .append('g')
       .attr('transform', `translate(${margin.left}, ${margin.top})`);
 

@@ -36,6 +36,8 @@ nav > div {
   .navbar__image-div:hover {
     transform: scale(1.5); }
 .app__container {
+  background-color: #fffefc;
+  background-image: url("data:image/svg+xml,%3Csvg width='84' height='48' viewBox='0 0 84 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h12v6H0V0zm28 8h12v6H28V8zm14-8h12v6H42V0zm14 0h12v6H56V0zm0 8h12v6H56V8zM42 8h12v6H42V8zm0 16h12v6H42v-6zm14-8h12v6H56v-6zm14 0h12v6H70v-6zm0-16h12v6H70V0zM28 32h12v6H28v-6zM14 16h12v6H14v-6zM0 24h12v6H0v-6zm0 8h12v6H0v-6zm14 0h12v6H14v-6zm14 8h12v6H28v-6zm-14 0h12v6H14v-6zm28 0h12v6H42v-6zm14-8h12v6H56v-6zm0-8h12v6H56v-6zm14 8h12v6H70v-6zm0 8h12v6H70v-6zM14 24h12v6H14v-6zm14-8h12v6H28v-6zM14 8h12v6H14V8zM0 8h12v6H0V8z' fill='%23f4f1ea' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -63,7 +65,7 @@ nav > div {
   margin: auto;
   max-width: 960px;
   padding: 1rem; }
-.home__container {
+.calculator-home__container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -1135,20 +1137,45 @@ nav > div {
 .home__container {
   align-items: center;
   display: flex;
+  flex: 1;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   margin: auto;
-  max-width: 960px; }
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  max-width: 960px;
+  width: 100vw; }
+  .home__container a {
+    background-color: #f4f1ea;
+    box-shadow: 0 0 2px #382110;
+    margin: 0.2rem 0;
+    max-width: 500px;
+    min-width: 300px;
+    padding: 0.6rem 0;
+    text-align: center;
+    width: 50vw; }
+    .home__container a:hover {
+      background-color: #e2dbc9;
+      box-shadow: 0 0 4px #382110;
+      color: #382110;
+      font-weight: bold; }
 
 hr {
-  width: 100%; }
+  border-color: transparent;
+  max-width: 60rem;
+  width: 95vw; }
+
+.home__section-title {
+  background-color: #382110;
+  color: white;
+  font-size: 2rem; }
 .temperature__container {
   border-radius: 5px;
   font-size: 3rem;
   padding: 0.5rem; }
   .temperature__container:hover {
     cursor: pointer; }
-.home__container {
+.weather-home__container {
   align-items: center;
   display: flex;
   flex: 1;
@@ -1159,7 +1186,7 @@ hr {
   padding: 2rem;
   padding-bottom: 0; }
 
-.home__current-weather {
+.weather-home__current-weather {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1168,18 +1195,18 @@ hr {
   margin-top: 2rem;
   text-align: center; }
 
-.home__forecast {
+.weather-home__forecast {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%; }
 
-.home__forecast-day {
+.weather-home__forecast-day {
   text-align: center;
   width: 9rem; }
   @media (max-width: 640px) {
-    .home__forecast-day {
+    .weather-home__forecast-day {
       padding: 0.5rem;
       margin-bottom: 2rem;
       width: 50%; } }
@@ -1210,7 +1237,7 @@ footer a:active {
   pointer-events: none; }
   .tooltip__container span {
     font-weight: normal; }
-svg {
+.map-graph-svg {
   background: lightsteelblue; }
 
 .country {
@@ -1507,7 +1534,8 @@ circle {
   justify-content: center;
   align-items: center;
   padding: 1rem; }
-.circle {
+.scatterplot-circle {
+  opacity: 1;
   stroke: black; }
 .tooltip__container {
   box-shadow: 2px 2px 2px gray;
@@ -1661,72 +1689,64 @@ circle {
 
 .tictactoe-home__status {
   padding-bottom: 1rem; }
-.home__button {
+.tribute-home__button {
   border: none;
   cursor: pointer; }
 
-.home__container {
+.tribute-home__container {
   color: #222;
   margin: auto;
   margin-top: 3rem;
   max-width: 60rem;
   width: 97vw; }
-  .home__container h1 {
+  .tribute-home__container h1 {
     text-align: center; }
 
-.home__description {
+.tribute-home__description {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex: 0 1 auto;
   padding: 0 2rem; }
-  .home__description div p {
+  .tribute-home__description div p {
     line-height: 1.2rem; }
 
-.home__translations {
+.tribute-home__translations {
   font-size: 0.9rem;
   padding: 0 2rem; }
-  .home__translations h2 {
+  .tribute-home__translations h2 {
     font-size: 1.1rem; }
 
-.home__links {
+.tribute-home__links {
   background-color: #f4f1ea;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding: 0.5rem 2rem;
   width: 100%; }
-  .home__links > button {
+  .tribute-home__links > button {
     margin-left: 2rem; }
-  .home__links > a:last-child {
+  .tribute-home__links > a:last-child {
     margin-left: auto; }
-  .home__links > a,
-  .home__links > button {
+  .tribute-home__links > a,
+  .tribute-home__links > button {
     color: #382110;
     font-weight: bold; }
-    .home__links > a:hover,
-    .home__links > button:hover {
+    .tribute-home__links > a:hover,
+    .tribute-home__links > button:hover {
       text-decoration: underline; }
 
-.home__title {
+.tribute-home__title {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%; }
-  .home__title div:first-child {
+  .tribute-home__title div:first-child {
     margin: auto; }
-  .home__title div:nth-child(2) {
+  .tribute-home__title div:nth-child(2) {
     padding-top: 1rem; }
-  .home__title a {
+  .tribute-home__title a {
     color: blue; }
-a {
-  color: blue; }
-
-.tribute-page-app__container {
-  justify-content: flex-start;
-  display: flex;
-  flex-direction: column;
-  min-height: 101vh; }
 .channel-name__container {
   color: darkred;
   font-size: 1.2rem;
@@ -1767,7 +1787,7 @@ a {
 .channels__container {
   display: flex;
   flex-direction: column; }
-.home__container {
+.twitch-home__container {
   margin: auto;
   margin-top: 3rem;
   max-width: 960px; }

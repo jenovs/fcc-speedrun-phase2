@@ -2,7 +2,7 @@ import React from 'react';
 
 import Home from './../Home';
 
-import './main.scss';
+// import './main.scss';
 
 export default class App extends React.Component {
 

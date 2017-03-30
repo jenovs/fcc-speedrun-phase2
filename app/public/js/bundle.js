@@ -32821,7 +32821,7 @@ var Home = function () {
   function Home(props) {
     return _react2['default'].createElement(
       'div',
-      { className: 'home__container' },
+      { className: 'calculator-home__container' },
       _react2['default'].createElement(_Calculator2['default'], props)
     );
   }
@@ -36855,7 +36855,7 @@ function parseForecast(data, metric) {
   return data.map(function (day, i) {
     return _react2['default'].createElement(
       'div',
-      { key: i, className: 'home__forecast-day' },
+      { key: i, className: 'weather-home__forecast-day' },
       day.date.weekday_short,
       _react2['default'].createElement('br', null),
       _react2['default'].createElement('img', { src: day.icon_url.replace('http', 'https') }),
@@ -36878,7 +36878,7 @@ var Home = function () {
     if (!props.weather) {
       return _react2['default'].createElement(
         'div',
-        { className: 'home__container' },
+        { className: 'weather-home__container' },
         _react2['default'].createElement(
           'div',
           null,
@@ -36888,10 +36888,10 @@ var Home = function () {
     }
     return _react2['default'].createElement(
       'div',
-      { className: 'home__container' },
+      { className: 'weather-home__container' },
       _react2['default'].createElement(
         'div',
-        { className: 'home__current-weather' },
+        { className: 'weather-home__current-weather' },
         _react2['default'].createElement(
           'div',
           null,
@@ -36916,7 +36916,7 @@ var Home = function () {
       ),
       _react2['default'].createElement(
         'div',
-        { className: 'home__forecast' },
+        { className: 'weather-home__forecast' },
         parseForecast(forecast, props.temp_c)
       )
     );
@@ -37359,7 +37359,7 @@ function renderChart(data, totalWidth, totalHeight, handleTooltip) {
   var reactNode = _reactDom2['default'].findDOMNode(this.refs.links);
   var svg = d3.select(reactNode).append('svg');
 
-  svg.attr("width", totalWidth).attr("height", totalHeight);
+  svg.attr("width", totalWidth).attr("height", totalHeight).attr('class', 'map-graph-svg');
 
   var projection = d3.geoMercator().translate([width / 2, height / 2 + 50]).scale(250);
 
@@ -37730,7 +37730,7 @@ var Navbar = function () {
         _react2['default'].createElement(
           'div',
           { className: 'navbar__project-div' },
-          projectName
+          projectName || 'FCC Speedrun'
         ),
         _react2['default'].createElement('div', {
           onClick: openMedium.bind(null, pathname),
@@ -38655,7 +38655,7 @@ function renderChart(dataset, axisOnly) {
 
   var node = _reactFauxDom2['default'].createElement('svg');
 
-  var svg = d3.select(node).attr('width', totalWidth).attr('height', totalHeight).append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
+  var svg = d3.select(node).attr('width', totalWidth).attr('height', totalHeight).attr('class', 'rqm-svg-container').append('g').attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
 
   dataset.forEach(function (d) {
     d[0] = parseTime(d[0]);
@@ -39840,7 +39840,7 @@ var Circle = function (_React$Component) {
 
             return onClick;
           }(),
-          className: 'circle',
+          className: 'scatterplot-circle',
           r: '0',
           style: { fill: d.Doping ? 'red' : 'green' },
           cx: x(d.Year),
@@ -39977,13 +39977,13 @@ var Legend = function () {
     return _react2['default'].createElement(
       'g',
       { transform: 'translate(' + props.x + ', ' + props.y + ')' },
-      _react2['default'].createElement('circle', { r: '5', style: { fill: 'green', stroke: 'black' } }),
+      _react2['default'].createElement('circle', { r: '5', style: { fill: 'green', stroke: 'black', opacity: 1 } }),
       _react2['default'].createElement(
         'text',
         { dx: '8', dy: '5' },
         'No doping allegations'
       ),
-      _react2['default'].createElement('circle', { cy: '16', r: '5', style: { fill: 'red', stroke: 'black' } }),
+      _react2['default'].createElement('circle', { cy: '16', r: '5', style: { fill: 'red', stroke: 'black', opacity: 1 } }),
       _react2['default'].createElement(
         'text',
         { dx: '8', dy: '22' },
@@ -41546,8 +41546,6 @@ var _Home = __webpack_require__(287);
 
 var _Home2 = _interopRequireDefault(_Home);
 
-__webpack_require__(372);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41555,6 +41553,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+// import './main.scss';
 
 var App = function (_React$Component) {
   _inherits(App, _React$Component);
@@ -41711,10 +41711,10 @@ var Home = function () {
 
     return _react2['default'].createElement(
       'div',
-      { className: 'home__container' },
+      { className: 'tribute-home__container' },
       _react2['default'].createElement(
         'div',
-        { className: 'home__title' },
+        { className: 'tribute-home__title' },
         _react2['default'].createElement(
           'div',
           null,
@@ -41740,13 +41740,13 @@ var Home = function () {
         { id: 'tribute-info' },
         _react2['default'].createElement(
           'div',
-          { className: 'home__description' },
+          { className: 'tribute-home__description' },
           parseText(props.description)
         ),
         _react2['default'].createElement('hr', null),
         _react2['default'].createElement(
           'div',
-          { className: 'home__translations' },
+          { className: 'tribute-home__translations' },
           parseText(props.translations)
         )
       )
@@ -42288,7 +42288,7 @@ var Home = function () {
   function Home(props) {
     return _react2['default'].createElement(
       'div',
-      { className: 'home__container' },
+      { className: 'twitch-home__container' },
       _react2['default'].createElement(_Channels2['default'], props)
     );
   }
@@ -43803,12 +43803,7 @@ module.exports = exports['default'];
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 372 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 372 */,
 /* 373 */
 /***/ (function(module, exports) {
 

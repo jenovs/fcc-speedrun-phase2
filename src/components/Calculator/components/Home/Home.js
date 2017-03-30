@@ -5,7 +5,7 @@ import './home.scss';
 import Calculator from './../Calculator';
 
 const Home = (props) => (
-  <div className="home__container">
+  <div className="calculator-home__container">
     <Calculator {...props} />
   </div>
 );

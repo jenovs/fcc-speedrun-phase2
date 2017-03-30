@@ -45,7 +45,7 @@ class Circle extends React.Component {
         onMouseEnter={e => this.handleCover(e, d)}
         onMouseLeave={e => this.handleCover(e, d)}
         onClick={e => this.handleCover(e, d)}
-        className="circle"
+        className="scatterplot-circle"
         r="0"
         style={{fill: (d.Doping ? 'red' : 'green')}}
         cx={x(d.Year)}
