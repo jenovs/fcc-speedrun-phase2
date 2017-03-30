@@ -4,11 +4,11 @@ import Home from './../Home';
 
 // import './app.scss';
 
-const dataUrl = 'https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json';
+const dataUrl = 'https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json';
 
 const checkWidth = (winWidth) => {
   const baseWidth = 960;
-  const minWidth = 200;
+  const minWidth = 960;
   if (winWidth > baseWidth) return baseWidth;
   if (winWidth < minWidth) return minWidth;
   return winWidth;
@@ -23,7 +23,7 @@ export default class App extends React.Component {
 
     this.state = {
       width: w,
-      height: w / 2,
+      height: w - w * 0.2,
     };
   }
 
@@ -45,8 +45,10 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { data, width, height } = this.state;
+    const { data, width, height, boxShadow } = this.state;
+    // console.log(data);
     const props = {
+      boxShadow,
       data,
       width,
       height,
@@ -55,7 +57,7 @@ export default class App extends React.Component {
     const childrenWithProps = React.Children.map(this.props.children, (child) => React.cloneElement(child, props));
 
     return (
-      <div id="app_div" className="app__container">
+      <div id="app_div" className="app__container" >
         <Home {...props} />
       </div>
     )

@@ -6,6 +6,7 @@ import BarChart from './components/BarChart/components/App';
 import Calculator from './components/Calculator/components/App';
 import CamperLeaderboard from './components/CamperLeaderboard/components/App';
 import DungeonCrawler from './components/DungeonCrawler/components/App';
+import ForceGraph from './components/ForceGraph/components/App';
 import GameOfLife from './components/GameOfLife/components/App';
 import Heatmap from './components/Heatmap/components/App';
 import Home from './components/Home';
@@ -43,7 +44,8 @@ module.exports = (
     <Route path='dungeon-crawler' component={DungeonCrawler} />
     <Route path='bar-chart' component={BarChart} />
     <Route path='scatterplot-chart' component={Scatterplot} />
-    <Route path='Heatmap' component={Heatmap} />
+    <Route path='heatmap' component={Heatmap} />
+    <Route path='force-graph' component={ForceGraph} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />
