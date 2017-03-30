@@ -1,0 +1,13 @@
+.cell__container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #eee;
+  min-height: 3px;
+  min-width: 3px;
+  // transition: background-color 0.1s;
+
+  &.fill {
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+  }
+}
