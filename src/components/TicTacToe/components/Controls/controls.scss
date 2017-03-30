@@ -1,0 +1,41 @@
+.controls__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & button {
+    font-size: 1.2rem;
+    height: 2rem;
+    margin: 1rem;
+    outline: none;
+    width: 2rem;
+  }
+}
+
+.controls__btn-container {
+  margin-bottom: 2rem;
+}
+
+.controls__button {
+  background-color: #fff;
+  border: none;
+  color: gray;
+  box-shadow: 0 0 1px black;
+}
+
+.controls__button--selected {
+  background-color: cornflowerblue;
+  border: none;
+  box-shadow: 0 0 5px cornflowerblue;
+  color: white;
+  font-weight: bold;
+}
+
+.controls__label {
+  text-align: center;
+
+  & p:first-child {
+    font-size: 1.5rem;
+  }
+}

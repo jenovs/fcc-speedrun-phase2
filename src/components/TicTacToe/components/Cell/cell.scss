@@ -1,0 +1,19 @@
+.cell__container {
+  align-items: center;
+  box-shadow: 0 0 5px gray;
+  display: flex;
+  font-family: 'Indie Flower', cursive;
+  font-size: 5rem;
+  height: 30%;
+  justify-content: center;
+  width: 30%;
+
+  &.hidden {
+    color: transparent;
+  }
+
+  &.won {
+    box-shadow: 0 0 5px 5px cornflowerblue;
+    z-index: 99;
+  }
+}

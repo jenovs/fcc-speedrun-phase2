@@ -1,0 +1,12 @@
+.board__container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 20rem;
+  justify-content: space-around;
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  width: 20rem;
+}
