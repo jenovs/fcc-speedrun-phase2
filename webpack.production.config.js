@@ -10,7 +10,7 @@ module.exports = {
   ],
 
   output: {
-    path: path.join(__dirname, 'bundles'),
+    path: path.join(__dirname, 'app', 'public'),
     filename: 'js/bundle.min.js'
   },
 
