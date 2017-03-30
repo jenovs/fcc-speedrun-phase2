@@ -10,6 +10,7 @@ const Home = (props) => (
     <Link to='/local-weather'>Show the Local Weather</Link>
     <Link to='/wikipedia-viewer'>Wikipedia Viewer</Link>
     <Link to='/twitch-client'>Twitch Client</Link>
+    <Link to='/calculator'>Calculator</Link>
   </div>
 );
 

@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 
 import App from './components/App';
+import Calculator from './components/Calculator/components/App';
 import Home from './components/Home';
 import LocalWeather from './components/LocalWeather/App';
 import RandomQuoteMachine from './components/RandomQuoteMachine/App';
@@ -20,6 +21,7 @@ module.exports = (
     <Route path='local-weather' component={LocalWeather} />
     <Route path='wikipedia-viewer' component={WikipediaViewer} />
     <Route path='twitch-client' component={TwitchClient} />
+    <Route path='calculator' component={Calculator} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />
