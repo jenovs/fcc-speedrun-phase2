@@ -7,6 +7,7 @@ import Calculator from './components/Calculator/components/App';
 import CamperLeaderboard from './components/CamperLeaderboard/components/App';
 import DungeonCrawler from './components/DungeonCrawler/components/App';
 import GameOfLife from './components/GameOfLife/components/App';
+import Heatmap from './components/Heatmap/components/App';
 import Home from './components/Home';
 import LocalWeather from './components/LocalWeather/App';
 import MarkdownPreviewer from './components/MarkdownPreviewer/components/App';
@@ -42,6 +43,7 @@ module.exports = (
     <Route path='dungeon-crawler' component={DungeonCrawler} />
     <Route path='bar-chart' component={BarChart} />
     <Route path='scatterplot-chart' component={Scatterplot} />
+    <Route path='Heatmap' component={Heatmap} />
     {/* <Route path='tribute-page/about' component={TributePageAbout} /> */}
 
     <Route path='*' component={NotFound404} />
